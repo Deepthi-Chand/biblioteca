@@ -5,13 +5,14 @@ import java.util.List;
 public class Library {
     List<Book> bookList = new ArrayList<Book>();
     List<Movie> movieList=new ArrayList<Movie>();
+    List<User> userList=new ArrayList<User>();
     Library()
     {
-        bookList.add(new Book("FirstBook",2));
-        bookList.add(new Book("Second Book",1));
-        bookList.add(new Book("Third Book",3));
-        bookList.add(new Book("Fourth Book",1));
-        bookList.add(new Book("Fifth Book",4));
+        bookList.add(new Book("FirstBook"));
+        bookList.add(new Book("Second Book"));
+        bookList.add(new Book("Third Book"));
+        bookList.add(new Book("Fourth Book"));
+        bookList.add(new Book("Fifth Book"));
         movieList.add(new Movie("Movie 1",1991,"director 1",6));
         movieList.add(new Movie("Movie 2",1992,"director 2",5));
         movieList.add(new Movie("Movie 3",1993,"director 3",4));
@@ -27,6 +28,8 @@ public class Library {
         movieList.add(new Movie("Movie 13",2004,"director 13",-1));
         movieList.add(new Movie("Movie 14",2005,"director 14",5));
         movieList.add(new Movie("Movie 15",2006,"director 15",-1));
+        userList.add(new User("111-1111","1234","9849849849","user1@domain.com","user1"));
+        userList.add(new User("222-2222","12345","9898989898","user2@domain.com","user2"));
     }
     void welcome_message()
     {
@@ -38,18 +41,18 @@ public class Library {
         for (Book b: bookList)
         {
             System.out.println((bookList.indexOf(b)+1)+": "+b.getName());
-            System.out.println("\t\t"+b.getAvailable()+" of "+b.getTotal()+" available");
+            System.out.println("\t\tAvailable:\t"+b.getAvailablity());
         }
     }
     void reserve(int bookID)
     {
-        if(bookID>4)
+        if(bookID>4||bookID<0)
         {
             System.out.println("Wrong ID of Book");
             return;
         }
         Book t=bookList.get(bookID);
-        if(t.check_availability()>0)
+        if(t.getAvailablity())
         {
             t.reserve();
             System.out.println("Book Successfully reserved");
@@ -79,7 +82,26 @@ public class Library {
     public void checkMembership(int userID) {
         if(userID==-1)
             System.out.println("Please talk to a Librarian. Thank you.");
-        else {}
+        else
+        {
+            User u=userList.get(userID);
+            System.out.println("Name:\t"+u.getName());
+            System.out.println("Phonenumber:\t" + u.getPhoneNumber());
+            System.out.println("EmaitID:\t" + u.getEmailID());
 
+        }
+
+    }
+
+    public int login(String loginID, String password) {
+        int userID=-2;
+        for(User u:userList)
+            if(u.check(loginID,password))
+            {
+                userID= userList.indexOf(u);
+                System.out.print("\tYES");
+                break;
+            }
+        return userID;
     }
 }

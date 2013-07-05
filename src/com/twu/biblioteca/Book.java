@@ -1,32 +1,18 @@
 package com.twu.biblioteca;
 
 public class Book {
-    private int total;
-    private int available;
+    private boolean available;
     private String name;
-    public Book(String nam,int tot)
+    public Book(String nam)
     {
         name=nam;
-        total=tot;
-        available=tot;
-    }
-
-    int check_availability()
-    {
-        if(available>0)
-            return available;
-        else
-            return -1;
+        available=true;
     }
     void reserve()
     {
-        available--;
+        available=false;
     }
-    int getTotal()
-    {
-        return total;
-    }
-    int getAvailable()
+    boolean getAvailablity()
     {
         return available;
     }
@@ -34,8 +20,8 @@ public class Book {
     {
         return name;
     }
-    void setAvailable(int available1l)
+    void setAvailable()       //future enhancement
     {
-        available= available1l;
+        available= true;
     }
 }

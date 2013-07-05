@@ -9,7 +9,8 @@ public class BibliotecaApp {
         Library libraryHead =new Library();
         Scanner sc = new Scanner(System.in);
         int flag=-1;
-        int userID=-1;          //-1 if user not logged in
+        int userID=-1;
+        String loginID;
         while(flag!=0)
         {
             System.out.println("");
@@ -19,42 +20,38 @@ public class BibliotecaApp {
             switch(flag)
             {
                 case 1:
+                    if(userID!=-1)
+                        userID=-1;
+                    else
+                    {
+                        System.out.println("Enter your credentials");
+                        System.out.print("Username(library number):\t");
+                        loginID=sc.next();
+                        System.out.print("Password:\t");
+                        userID=libraryHead.login(loginID,sc.next());
+                        if(userID==-2)
+                        {
+                            System.out.println("Invalid details");
+                            userID=-1;
+                            pressEnter();
+                        }
+                    }
                     break;
                 case 2:
                     libraryHead.showBookList();
-                    System.out.print("Press enter to continue");
-                    try {
-                        System.in.read();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                    pressEnter();
                     break;
                 case 3:
                     libraryHead.showMovieList();
-                    System.out.print("Press enter to continue");
-                    try {
-                        System.in.read();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                    pressEnter();
                     break;
                 case 4:
                     libraryHead.checkMembership(userID);
-                    System.out.print("Press enter to continue");
-                    try {
-                        System.in.read();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                    pressEnter();
                     break;
                 case 0:
                     System.out.println("Closing Application");
-                    System.out.print("Press enter to continue");
-                    try {
-                        System.in.read();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                    pressEnter();
                     break;
                 case 5:
                     if (userID!=-1)
@@ -69,6 +66,15 @@ public class BibliotecaApp {
                     break;
 
             }
+        }
+    }
+
+    private static void pressEnter() {
+        System.out.print("Press enter to continue");
+        try {
+            System.in.read();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
