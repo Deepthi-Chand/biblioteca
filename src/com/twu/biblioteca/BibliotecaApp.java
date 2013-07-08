@@ -78,7 +78,7 @@ public class BibliotecaApp {
         }
     }
 
-    private static void displayOptions(int userID) {
+    public static void displayOptions(int userID) {
         if(userID==-1)
             System.out.println("1.Login");
         else
