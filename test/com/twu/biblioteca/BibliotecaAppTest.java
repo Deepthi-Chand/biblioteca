@@ -10,12 +10,6 @@ import static org.junit.Assert.assertEquals;
 
 public class BibliotecaAppTest {
     BibliotecaApp bibliotecaApp;
-    @Before
-    public void setBibliotecaApp()
-    {
-        bibliotecaApp=new BibliotecaApp();
-    }
-
     @Test
     public void displayOptionsBeforeLoginTest() throws Exception {
         captureOutput(new CaptureTest() {
