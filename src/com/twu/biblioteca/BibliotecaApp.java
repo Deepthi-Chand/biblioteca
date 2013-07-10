@@ -1,7 +1,7 @@
 package com.twu.biblioteca;
 import java.io.IOException;
 import java.util.Scanner;
-//import static java.lang.System.exit;
+
 
 public class BibliotecaApp {
 
@@ -13,7 +13,6 @@ public class BibliotecaApp {
         String loginID;
         while(flag!=0)
         {
-            System.out.println("");
             libraryHead.welcome_message();
             displayOptions(userID);
             flag=sc.nextInt();
