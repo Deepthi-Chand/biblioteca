@@ -40,7 +40,7 @@ public class BibliotecaApp {
                     pressEnter();
                     break;
                 case 3:
-                    libraryHead.showMovieList();
+                    showMovieList();
                     pressEnter();
                     break;
                 case 4:
@@ -98,6 +98,15 @@ public class BibliotecaApp {
         {
             System.out.print(printString);
             printString=libraryHead.getBookDetails();
+        }
+    }
+
+    public static void showMovieList() {
+        String printString="ID \t Movie  \t Year \t Director \t Rating"+"\n"+"------------------------------------------"+"\n";
+        while(printString !="")
+        {
+            System.out.print(printString);
+            printString=libraryHead.getMovieDetails();
         }
     }
 }
