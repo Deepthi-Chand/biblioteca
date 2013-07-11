@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 
 public class BibliotecaApp {
-
+    static Library libraryHead= new Library();
     public static void main(String[] args) {
-        Library libraryHead =new Library();
         Scanner sc = new Scanner(System.in);
         int flag=-1;
         int userID=-1;
@@ -37,7 +36,7 @@ public class BibliotecaApp {
                     }
                     break;
                 case 2:
-                    libraryHead.showBookList();
+                    showBookList();
                     pressEnter();
                     break;
                 case 3:
@@ -55,7 +54,7 @@ public class BibliotecaApp {
                 case 5:
                     if (userID!=-1)
                     {
-                        libraryHead.showBookList();
+                        showBookList();
                         System.out.print("Select the book:( Enter book id ) :\t\t");
                         libraryHead.reserve((sc.nextInt()-1));
                         break;
@@ -91,5 +90,14 @@ public class BibliotecaApp {
         }
         System.out.println("0.Exit the application");
         System.out.print("\t\tChoose your option:\t\t");
+    }
+
+    public static void showBookList() {
+        String printString=libraryHead.getBookDetails();
+        while(printString !="")
+        {
+            System.out.print(printString);
+            printString=libraryHead.getBookDetails();
+        }
     }
 }

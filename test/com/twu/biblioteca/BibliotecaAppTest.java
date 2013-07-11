@@ -21,7 +21,8 @@ public class BibliotecaAppTest {
                 assertEquals(displayString, outContent.toString());
             }
         });
-    } @Test
+    }
+    @Test
     public void displayOptionsAfterLoginTest() throws Exception {
         captureOutput(new CaptureTest() {
             @Override
@@ -33,4 +34,17 @@ public class BibliotecaAppTest {
             }
         });
     }
+
+    @Test
+    public void showBookListTest() throws Exception {
+        captureOutput(new CaptureTest() {
+            @Override
+            public void test(ByteArrayOutputStream outContent, ByteArrayOutputStream errContent) throws Exception {
+                bibliotecaApp.showBookList();
+                String displayString="1: FirstBook\n\t\tAvailable:\ttrue\n2: Second Book\n\t\tAvailable:\ttrue\n3: Third Book\n\t\tAvailable:\ttrue\n";
+                assertEquals(displayString,outContent.toString());
+            }
+        });
+    }
+
 }

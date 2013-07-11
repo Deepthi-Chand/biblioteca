@@ -6,13 +6,13 @@ public class Library {
     List<Book> bookList = new ArrayList<Book>();
     List<Movie> movieList=new ArrayList<Movie>();
     List<User> userList=new ArrayList<User>();
+    private String book;
+    static int index=-1;
     Library()
     {
         bookList.add(new Book("FirstBook"));
         bookList.add(new Book("Second Book"));
         bookList.add(new Book("Third Book"));
-        bookList.add(new Book("Fourth Book"));
-        bookList.add(new Book("Fifth Book"));
         movieList.add(new Movie("Movie 1",1991,"director 1",6));
         movieList.add(new Movie("Movie 2",1992,"director 2",5));
         movieList.add(new Movie("Movie 3",1993,"director 3",4));
@@ -36,14 +36,14 @@ public class Library {
         System.out.println("\t\tWelcome To Biblioteca");
         System.out.println("\t\t        MENU        \n");
     }
-    void showBookList()
+    /*void showBookList()
     {
         for (Book b: bookList)
         {
             System.out.println((bookList.indexOf(b)+1)+": "+b.getName());
             System.out.println("\t\tAvailable:\t"+b.getAvailablity());
         }
-    }
+    }*/
     void reserve(int bookID)
     {
         if(bookID>4||bookID<0)
@@ -103,5 +103,19 @@ public class Library {
                 break;
             }
         return userID;
+    }
+
+    public String getBookDetails() {
+        String printString="";
+        Book b;
+        index++;
+        if(index==bookList.size())
+            index=-1;
+        else
+        {
+            b=bookList.get(index);
+            printString= (bookList.indexOf(b)+1)+": "+b.getName()+"\n"+"\t\tAvailable:\t"+b.getAvailablity()+"\n";
+        }
+        return printString;
     }
 }
