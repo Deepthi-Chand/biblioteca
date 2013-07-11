@@ -58,5 +58,15 @@ public class BibliotecaAppTest {
             }
         });
     }
-
+    @Test
+    public void welcomeMessageTest() throws Exception {
+        captureOutput(new CaptureTest() {
+            @Override
+            public void test(ByteArrayOutputStream outContent, ByteArrayOutputStream errContent) throws Exception {
+                bibliotecaApp.welcomeMessage();
+                String displayString="\t\tWelcome To Biblioteca"+"\n"+"\t\t        MENU        \n"+"\n";
+                assertEquals(displayString,outContent.toString());
+            }
+        });
+    }
 }

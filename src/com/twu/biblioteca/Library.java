@@ -33,11 +33,6 @@ public class Library {
         userList.add(new User("111-1111","1234","9849849849","user1@domain.com","user1"));
         userList.add(new User("222-2222","12345","9898989898","user2@domain.com","user2"));
     }
-    void welcome_message()
-    {
-        System.out.println("\t\tWelcome To Biblioteca");
-        System.out.println("\t\t        MENU        \n");
-    }
     void reserve(int bookID)
     {
         if(bookID>4||bookID<0)

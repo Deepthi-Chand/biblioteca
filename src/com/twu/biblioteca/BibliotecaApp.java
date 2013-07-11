@@ -12,7 +12,7 @@ public class BibliotecaApp {
         String loginID;
         while(flag!=0)
         {
-            libraryHead.welcome_message();
+            welcomeMessage();
             displayOptions(userID);
             flag=sc.nextInt();
             switch(flag)
@@ -67,6 +67,7 @@ public class BibliotecaApp {
         }
     }
 
+
     private static void pressEnter() {
         System.out.print("Press enter to continue");
         try {
@@ -74,6 +75,11 @@ public class BibliotecaApp {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void welcomeMessage() {
+        System.out.println("\t\tWelcome To Biblioteca");
+        System.out.println("\t\t        MENU        \n");
     }
 
     public static void displayOptions(int userID) {

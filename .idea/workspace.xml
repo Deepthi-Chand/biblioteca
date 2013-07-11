@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="647aceb1-866b-450e-81e1-1ae774ff0236" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" />
     </list>
     <ignored path="biblioteca.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373457316302" ignored="false" />
-    <file path="/BibliotecaApp.java" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373521332339" ignored="false" />
+    <file path="/BibliotecaApp.java" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373524849939" ignored="false" />
     <file path="/librarian.java" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1372940081840" ignored="false" />
     <file path="/book.java" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1372938133215" ignored="false" />
     <file path="/ExampleTest.java" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373019623990" ignored="false" />
@@ -21,9 +23,9 @@
     <file path="/MovieTest.java" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373021575668" ignored="false" />
     <file path="/BookDetailTest.java" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373022218716" ignored="false" />
     <file path="/UserDetailTest.java" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373022145906" ignored="false" />
-    <file path="/BibliotecaAppTest.java" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373521427256" ignored="false" />
+    <file path="/BibliotecaAppTest.java" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373524697027" ignored="false" />
     <file path="/.gitignore" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373456934803" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373521830696" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373524039453" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +99,7 @@
       <file leaf-file-name="BibliotecaApp.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="61" selection-start="3571" selection-end="3571" vertical-scroll-proportion="0.0">
+            <state line="110" column="77" selection-start="3533" selection-end="3533" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,7 +108,7 @@
       <file leaf-file-name="BibliotecaAppTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="96" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.0">
+            <state line="66" column="98" selection-start="3292" selection-end="3292" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#387#897#0" expanded="true" />
                 <element signature="e#886#887#0" expanded="true" />
@@ -114,6 +116,8 @@
                 <element signature="e#2070#2071#0" expanded="true" />
                 <element signature="e#2177#2891#0" expanded="true" />
                 <element signature="e#2880#2881#0" expanded="true" />
+                <element signature="e#2988#3389#0" expanded="true" />
+                <element signature="e#3378#3379#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,7 +135,7 @@
       <file leaf-file-name="Library.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="5" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.16">
+            <state line="34" column="5" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.68">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#142#148#0" expanded="true" />
@@ -769,16 +773,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="61" selection-start="3571" selection-end="3571" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="96" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.0">
+        <state line="66" column="98" selection-start="3292" selection-end="3292" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#387#897#0" expanded="true" />
             <element signature="e#886#887#0" expanded="true" />
@@ -786,13 +783,22 @@
             <element signature="e#2070#2071#0" expanded="true" />
             <element signature="e#2177#2891#0" expanded="true" />
             <element signature="e#2880#2881#0" expanded="true" />
+            <element signature="e#2988#3389#0" expanded="true" />
+            <element signature="e#3378#3379#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="77" selection-start="3533" selection-end="3533" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="5" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.16">
+        <state line="34" column="5" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.68">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#142#148#0" expanded="true" />
