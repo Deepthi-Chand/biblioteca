@@ -64,7 +64,7 @@ public class BibliotecaAppTest {
             @Override
             public void test(ByteArrayOutputStream outContent, ByteArrayOutputStream errContent) throws Exception {
                 bibliotecaApp.welcomeMessage();
-                String displayString="\t\tWelcome To Biblioteca"+"\n"+"\t\t        MENU        \n"+"\n";
+                String displayString="\t\tWelcome To Biblioteca\r\n\t\t\t\tMENU\r\n";
                 assertEquals(displayString,outContent.toString());
             }
         });

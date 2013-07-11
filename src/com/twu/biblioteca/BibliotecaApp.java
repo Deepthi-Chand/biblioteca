@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
+@SuppressWarnings("ResultOfMethodCallIgnored")
 public class BibliotecaApp {
     static Library libraryHead= new Library();
     public static void main(String[] args) {
@@ -44,7 +45,7 @@ public class BibliotecaApp {
                     pressEnter();
                     break;
                 case 4:
-                    libraryHead.checkMembership(userID);
+                    System.out.println(libraryHead.checkMembership(userID));
                     pressEnter();
                     break;
                 case 0:
@@ -56,7 +57,18 @@ public class BibliotecaApp {
                     {
                         showBookList();
                         System.out.print("Select the book:( Enter book id ) :\t\t");
-                        libraryHead.reserve((sc.nextInt()-1));
+                        switch (libraryHead.reserve((sc.nextInt()-1)))
+                        {
+                            case 1:
+                                System.out.println("Wrong ID of Book");
+                                break;
+                            case 2:
+                                System.out.println("Book Successfully reserved");
+                                break;
+                            case 3:
+                                System.out.println("Cannot reserve Book");
+                                break;
+                        }
                         break;
                     }
                 default:
@@ -79,7 +91,7 @@ public class BibliotecaApp {
 
     public static void welcomeMessage() {
         System.out.println("\t\tWelcome To Biblioteca");
-        System.out.println("\t\t        MENU        \n");
+        System.out.println("\t\t\t\tMENU");
     }
 
     public static void displayOptions(int userID) {
@@ -100,7 +112,7 @@ public class BibliotecaApp {
 
     public static void showBookList() {
         String printString=libraryHead.getBookDetails();
-        while(printString !="")
+        while(!printString.equals(""))
         {
             System.out.print(printString);
             printString=libraryHead.getBookDetails();
@@ -109,7 +121,7 @@ public class BibliotecaApp {
 
     public static void showMovieList() {
         String printString="ID \t Movie  \t Year \t Director \t Rating"+"\n"+"------------------------------------------"+"\n";
-        while(printString !="")
+        while(!printString.equals(""))
         {
             System.out.print(printString);
             printString=libraryHead.getMovieDetails();

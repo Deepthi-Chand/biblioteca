@@ -33,37 +33,33 @@ public class Library {
         userList.add(new User("111-1111","1234","9849849849","user1@domain.com","user1"));
         userList.add(new User("222-2222","12345","9898989898","user2@domain.com","user2"));
     }
-    void reserve(int bookID)
+    int reserve(int bookID)
     {
-        if(bookID>4||bookID<0)
-        {
-            System.out.println("Wrong ID of Book");
-            return;
-        }
+        if(bookID>bookList.size()-1||bookID<0)
+            return 1;
         Book t=bookList.get(bookID);
         if(t.getAvailablity())
         {
             t.reserve();
-            System.out.println("Book Successfully reserved");
+            return 2;
         }
         else
-        {
-            System.out.println("Cannot reserve Book");
-        }
-
+            return 3;
     }
 
-    public void checkMembership(int userID) {
+    public String checkMembership(int userID) {
+        String membership_detail="";
         if(userID==-1)
-            System.out.println("Please talk to a Librarian. Thank you.");
+            membership_detail="Please talk to a Librarian. Thank you.";
         else
         {
             User u=userList.get(userID);
-            System.out.println("Name:\t"+u.getName());
-            System.out.println("Phonenumber:\t" + u.getPhoneNumber());
-            System.out.println("EmaitID:\t" + u.getEmailID());
+            membership_detail+="Name:\t"+u.getName()+"\n";
+            membership_detail+="Phonenumber:\t" + u.getPhoneNumber()+"\n";
+            membership_detail+="EmaitID:\t" + u.getEmailID()+"\n";
 
         }
+        return membership_detail;
 
     }
 
