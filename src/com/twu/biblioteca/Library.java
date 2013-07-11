@@ -3,9 +3,9 @@ package com.twu.biblioteca;
 import java.util.ArrayList;
 import java.util.List;
 public class Library {
-    List<Book> bookList = new ArrayList<Book>();
-    List<Movie> movieList=new ArrayList<Movie>();
-    List<User> userList=new ArrayList<User>();
+    static List<Book> bookList = new ArrayList<Book>();
+    static List<Movie> movieList=new ArrayList<Movie>();
+    static List<User> userList=new ArrayList<User>();
     private String book;
     static int index=-1;
     private String movieDetails;
@@ -33,7 +33,7 @@ public class Library {
         userList.add(new User("111-1111","1234","9849849849","user1@domain.com","user1"));
         userList.add(new User("222-2222","12345","9898989898","user2@domain.com","user2"));
     }
-    int reserve(int bookID)
+    static int reserve(int bookID)
     {
         if(bookID>bookList.size()-1||bookID<0)
             return 1;
