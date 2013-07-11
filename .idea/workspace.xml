@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="647aceb1-866b-450e-81e1-1ae774ff0236" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" />
     </list>
     <ignored path="biblioteca.iws" />
@@ -25,7 +23,7 @@
     <file path="/UserDetailTest.java" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373022145906" ignored="false" />
     <file path="/BibliotecaAppTest.java" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373521427256" ignored="false" />
     <file path="/.gitignore" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373456934803" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373521820102" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="647aceb1-866b-450e-81e1-1ae774ff0236" time="1373521830696" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BibliotecaAppTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BibliotecaAppTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="96" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.61409795">
+            <state line="49" column="96" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#387#897#0" expanded="true" />
                 <element signature="e#886#887#0" expanded="true" />
@@ -130,10 +128,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Library.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Library.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="146" selection-start="4884" selection-end="4884" vertical-scroll-proportion="0.0">
+            <state line="39" column="5" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.16">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#142#148#0" expanded="true" />
@@ -176,8 +174,8 @@
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/TestHelper.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" />
       </list>
     </option>
   </component>
@@ -771,18 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="146" selection-start="4884" selection-end="4884" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#142#148#0" expanded="true" />
-            <element signature="e#191#198#0" expanded="true" />
-            <element signature="e#239#245#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="108" column="61" selection-start="3571" selection-end="3571" vertical-scroll-proportion="0.0">
@@ -792,7 +778,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaAppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="96" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.61409795">
+        <state line="49" column="96" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#387#897#0" expanded="true" />
             <element signature="e#886#887#0" expanded="true" />
@@ -800,6 +786,18 @@
             <element signature="e#2070#2071#0" expanded="true" />
             <element signature="e#2177#2891#0" expanded="true" />
             <element signature="e#2880#2881#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="5" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.16">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#142#148#0" expanded="true" />
+            <element signature="e#191#198#0" expanded="true" />
+            <element signature="e#239#245#0" expanded="true" />
           </folding>
         </state>
       </provider>

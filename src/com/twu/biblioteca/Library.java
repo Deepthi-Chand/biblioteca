@@ -38,14 +38,6 @@ public class Library {
         System.out.println("\t\tWelcome To Biblioteca");
         System.out.println("\t\t        MENU        \n");
     }
-    /*void showBookList()
-    {
-        for (Book b: bookList)
-        {
-            System.out.println((bookList.indexOf(b)+1)+": "+b.getName());
-            System.out.println("\t\tAvailable:\t"+b.getAvailablity());
-        }
-    }*/
     void reserve(int bookID)
     {
         if(bookID>4||bookID<0)
@@ -62,24 +54,6 @@ public class Library {
         else
         {
             System.out.println("Cannot reserve Book");
-        }
-
-    }
-
-    public void showMovieList() {
-        String rate;
-        String pr = null;
-        System.out.println("ID \t Movie  \t Year \t Director \t Rating");
-        System.out.println("------------------------------------------");
-        for(Movie m:movieList)
-        {
-            if(m.getRating()==-1)
-                rate="N/A";
-            else
-                rate= String.valueOf(m.getRating());
-            //System.out.println((movieList.indexOf(m) + 1) + " \t" + m.getName() + " \t" + m.getYear() + " \t" + m.getDirector() + "  \t" + rate + " ");
-            pr=(movieList.indexOf(m) + 1) + " \\t" + m.getName() + " \\t" + m.getYear() + " \\t" + m.getDirector() + "  \\t" + rate + " "+"\\n";
-            System.out.print(pr);
         }
 
     }
